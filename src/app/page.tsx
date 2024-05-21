@@ -1,13 +1,16 @@
 import Tab1 from "@/components/Tab1";
 import Tab2 from "@/components/Tab2";
+import { CardHeader } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="bg-[#274831] h-[70px] flex items-center text-white">
-        <p className="pl-2">Muhammad Rizky Akbar</p>
+      <header className=" h-[70px] flex items-center text-black border-b-2 border-[#F4F4F5]">
+        <CardHeader>
+          <p>Muhammad Rizky Akbar</p>
+        </CardHeader>
       </header>
 
       {/* Konten utama */}
@@ -31,8 +34,10 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#274831] h-[70px] flex items-center text-white">
-        <p className="pl-2">14/05/2024</p>
+      <footer className="h-[70px] flex items-center text-black border-t-2 border-[#F4F4F5]">
+        <CardHeader>
+          <p>14/05/2024</p>
+        </CardHeader>
       </footer>
     </div>
   );
